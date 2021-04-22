@@ -49,11 +49,11 @@ class scrap:
         self.chrome_options.add_argument('--headless')
         self.chrome_options.add_argument('--no-sandbox')
 
-
-name = input("Type Name (Ex:: Movie >> Avatar 2009 , series >> Supernatural)>").title()
-print("< -- Wait to Find the MOvie -- >")
-app = scrap(name)
-app.headless()
-app.main()
-app.path()
-app.request()
+if __name__ == "__main__":
+    name = input("Type Name (Ex:: Movie >> Avatar 2009 , series >> Supernatural)>").title()
+    print("< -- Wait to Find the MOvie -- >")
+    app = scrap(name)
+    app.headless()
+    app.main()
+    app.path()
+    app.request()
